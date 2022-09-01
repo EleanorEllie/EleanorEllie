@@ -1,0 +1,21 @@
+#include <stdio.h>
+int fact(int x);
+
+void main()
+{
+   int n,t;
+   printf("enter any number:");
+   scanf("%d",&n);
+   t=fact(n);
+   printf("The factorial of %d is %d",n,t);
+}
+ int fact(int x)
+ {
+    int i,fact=1;
+    for(i=1;i<=x;i++)
+    {
+        fact = fact * i;
+    }
+  return(fact);
+    
+}
