@@ -1,0 +1,19 @@
+#include <stdio.h>
+void main()
+{
+   int r,answer;
+   printf("enter a number:");
+   scanf("%d",&r);
+   answer=checkevenodd(r);
+   if(answer==0)
+   printf("even");
+   else
+   printf("odd");
+}
+int checkevenodd(int r)
+{
+    if(r%2==0)
+    return(0);
+    else
+    return(1);
+}
